@@ -24,17 +24,17 @@ form.addEventListener("submit", (event) => {
     .then(value => {
         iziToast.success({
             title: 'Success',
-            message: `✅ Fulfilled promise in ${value}ms`,
+            message: `Fulfilled promise in ${value}ms`,
             position: 'topCenter',
-            backgroundColor: '#59A10D',
+            // backgroundColor: '#59A10D',
         })
     })
     .catch(error => {
         iziToast.error({
             title: 'Error',
-            message: `❌ Rejected promise in ${error}ms`,
+            message: `Rejected promise in ${error}ms`,
             position: 'topCenter',
-            backgroundColor: '#EF4040',
+            // backgroundColor: '#EF4040',
         })
     })
 });

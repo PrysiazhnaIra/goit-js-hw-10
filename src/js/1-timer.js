@@ -27,7 +27,7 @@ const options = {
             title: 'Error',
             message: 'Please choose a date in the future',
             position: 'topCenter',
-            backgroundColor: '#EF4040',
+            // backgroundColor: '#EF4040',
             class: 'show-error',
         });
         btnStart.disabled = true;
@@ -47,10 +47,11 @@ btnStart.addEventListener("click", () => {
         inputDatetimePicker.disabled = true;
         btnStart.disabled = true;
     } else {
-        iziToast.show({
+        iziToast.error({
+            title: 'Error',
             message: 'Please choose a valide date in the future',
             position: 'topCenter',
-            backgroundColor: '#EF4040',
+            // backgroundColor: '#EF4040',
             class: 'show-error',
         });
     }
